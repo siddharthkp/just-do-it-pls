@@ -5,7 +5,7 @@
   <br><br>
   This bot [tweets](https://twitter.com/_nikebot) a new slogan every day.
   <br><br>
-  You are encouraged to contribute to [the slogans](https://github.com/siddharthkp/just-do-it-please)!
+  You are encouraged to contribute to [the slogans](https://github.com/siddharthkp/just-do-it-pls)!
 </p>
 
 &nbsp;
