@@ -11,5 +11,5 @@
 &nbsp;&nbsp;
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/siddharthkp/just-do-it-pls/master/tweet.png" />
+  <img src="https://raw.githubusercontent.com/siddharthkp/just-do-it-pls/main/tweet.png" />
 </p>
