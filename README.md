@@ -5,7 +5,7 @@
   <br><br>
   <a href="https://twitter.com/_nikebot">This bot tweets</a> a new slogan every day.
   <br><br>
-  You are encouraged to <a href="https://github.com/siddharthkp/just-do-it-pls/blob/master/slogans.json">add slogans!</a>. Rhyming words for <a href="https://www.rhymezone.com/r/rhyme.cgi?Word=do&typeofrhyme=adv">inspo</a>
+  You are encouraged to <a href="https://github.com/siddharthkp/just-do-it-pls/blob/master/slogans.json">add slogans!</a>. Bonus points if <a href="https://www.rhymezone.com/r/rhyme.cgi?Word=do&typeofrhyme=adv">it rhymes</a> with the original slogan
 </p>
 
 &nbsp;&nbsp;
