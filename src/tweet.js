@@ -1,13 +1,11 @@
 require('dotenv').config();
 const fs = require('fs');
 const twitter = require('twitter');
-const nodeHtmlToImage = require('node-html-to-image');
 
 // get today's slogan from file
 const slogans = require('./slogans.json');
 const today = new Date().toISOString().split('T')[0]; // YYYY-MM-DD
 const todaysSlogan = slogans[today];
-const template = fs.readFileSync('./template.html', 'utf8');
 
 /** create twitter client */
 const client = new twitter({
@@ -17,17 +15,13 @@ const client = new twitter({
   access_token_secret: process.env.ACCESS_TOKEN_SECRET,
 });
 
-(async () => {
-  const photoBuffer = await nodeHtmlToImage({
-    html: template,
-    content: [{ slogan: todaysSlogan.slogan }],
-    puppeteerArgs: { args: ['--no-sandbox', '--disable-setuid-sandbox'] },
-  });
+const image = fs.readFileSync('./images/' + today + '.png');
 
+(async () => {
   try {
     // upload photo first
     await client
-      .post('media/upload', { media: photoBuffer })
+      .post('media/upload', { media: image })
       .then((screenshot) =>
         client.post('statuses/update', {
           media_ids: screenshot.media_id_string,
