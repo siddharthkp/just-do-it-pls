@@ -1,11 +1,11 @@
 <p align="center">
-  <img src="https://pbs.twimg.com/profile_images/1284783237970231301/D3Ykzln2_400x400.jpg" height="200px"/>
+  <img src="https://pbs.twimg.com/profile_images/833740986220044288/GOfi6QUd_400x400.jpg" height="200px"/>
   <br><br>
   <b>a collaborative "art" project</b>
   <br><br>
-  This bot [tweets](https://twitter.com/_nikebot) a new slogan every day.
+  This bot <a href="https://twitter.com/_nikebot">tweets</a> a new slogan every day.
   <br><br>
-  You are encouraged to contribute to [the slogans](https://github.com/siddharthkp/just-do-it-pls)!
+  You are encouraged to <a href="https://github.com/siddharthkp/just-do-it-pls">add slogans!</a>
 </p>
 
 &nbsp;
