@@ -21,7 +21,7 @@ const client = new twitter({
   const photoBuffer = await nodeHtmlToImage({
     html: template,
     content: [{ slogan: todaysSlogan.slogan }],
-    puppeteerArgs: ['--no-sandbox'],
+    puppeteerArgs: { args: ['--no-sandbox', '--disable-setuid-sandbox'] },
   });
 
   try {
@@ -31,7 +31,7 @@ const client = new twitter({
       .then((screenshot) =>
         client.post('statuses/update', {
           media_ids: screenshot.media_id_string,
-          status: 'via ' + todaysSlogan.via,
+          status: todaysSlogan.via ? 'via ' + todaysSlogan.via : '',
         })
       )
       .then((tweet) => {
