@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "npm run validate",
-    "validate": "node slogans.json"
+    "validate": "node slogans.json",
+    "build": "node src/build.js",
+    "tweet": "node src/tweet.js"
   },
   "keywords": [],
   "author": "",
