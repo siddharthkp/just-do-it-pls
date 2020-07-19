@@ -21,9 +21,7 @@ const client = new twitter({
   const photoBuffer = await nodeHtmlToImage({
     html: template,
     content: [{ slogan: todaysSlogan.slogan }],
-    puppeteerArgs: {
-      args: { '--no-sandbox': true },
-    },
+    puppeteerArgs: ['--no-sandbox'],
   });
 
   try {
