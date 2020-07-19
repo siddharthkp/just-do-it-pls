@@ -3,9 +3,9 @@
   <br><br>
   <b>a collaborative "art" project</b>
   <br><br>
-  This bot <a href="https://twitter.com/_nikebot">tweets</a> a new slogan every day.
+  <a href="https://twitter.com/_nikebot">This bot tweets</a> a new slogan every day.
   <br><br>
-  You are encouraged to <a href="https://github.com/siddharthkp/just-do-it-pls">add slogans!</a>
+  You are encouraged to <a href="https://github.com/siddharthkp/just-do-it-pls/blob/master/slogans.json">add slogans!</a>. Rhyming words for <a href="https://www.rhymezone.com/r/rhyme.cgi?Word=do&typeofrhyme=adv">inspo</a>
 </p>
 
 &nbsp;
