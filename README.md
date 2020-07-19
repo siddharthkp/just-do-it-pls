@@ -8,4 +8,8 @@
   You are encouraged to <a href="https://github.com/siddharthkp/just-do-it-pls/blob/master/slogans.json">add slogans!</a>. Rhyming words for <a href="https://www.rhymezone.com/r/rhyme.cgi?Word=do&typeofrhyme=adv">inspo</a>
 </p>
 
-&nbsp;
+&nbsp;&nbsp;
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/siddharthkp/just-do-it-pls/master/tweet.png" />
+</p>
