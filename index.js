@@ -24,6 +24,10 @@ const client = new twitter({
     puppeteerArgs: { args: ['--no-sandbox', '--disable-setuid-sandbox'] },
   });
 
+  let text = '';
+  if (todaysSlogan.via) text += 'via ' + todaysSlogan.via;
+  if (todaysSlogan.caption) text += '\n \n' + todaysSlogan.caption;
+
   try {
     // upload photo first
     await client
@@ -31,7 +35,7 @@ const client = new twitter({
       .then((screenshot) =>
         client.post('statuses/update', {
           media_ids: screenshot.media_id_string,
-          status: todaysSlogan.via ? 'via ' + todaysSlogan.via : '',
+          status: text,
         })
       )
       .then((tweet) => {
