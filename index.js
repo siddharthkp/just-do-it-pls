@@ -33,6 +33,7 @@ server.listen(5000);
     ignoreHTTPSErrors: true,
   });
   const page = await browser.newPage();
+  await page.waitFor(5000); /* webfont */
   await page.setViewport({ width: 896, height: 504, deviceScaleFactor: 1 });
   await page.goto(
     'http://localhost:5000/template?slogan=' + todaysSlogan.slogan
