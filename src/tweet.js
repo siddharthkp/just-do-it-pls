@@ -3,7 +3,7 @@ const fs = require('fs');
 const twitter = require('twitter');
 
 // get today's slogan from file
-const slogans = require('./slogans.json');
+const slogans = require('../slogans.json');
 const today = new Date().toISOString().split('T')[0]; // YYYY-MM-DD
 const todaysSlogan = slogans[today];
 
