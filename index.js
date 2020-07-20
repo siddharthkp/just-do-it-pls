@@ -1,7 +1,7 @@
 require('dotenv').config();
 const fs = require('fs');
 const twitter = require('twitter');
-const nodeHtmlToImage = require('node-html-to-image');
+const puppeteer = require('puppeteer');
 
 // get today's slogan from file
 const slogans = require('./slogans.json');
@@ -17,12 +17,31 @@ const client = new twitter({
   access_token_secret: process.env.ACCESS_TOKEN_SECRET,
 });
 
+// start server
+const handler = require('serve-handler');
+const http = require('http');
+
+const server = http.createServer((request, response) => {
+  return handler(request, response);
+});
+
+server.listen(5000);
+
 (async () => {
-  const photoBuffer = await nodeHtmlToImage({
-    html: template,
-    content: [{ slogan: todaysSlogan.slogan }],
-    puppeteerArgs: { args: ['--no-sandbox', '--disable-setuid-sandbox'] },
+  const browser = await puppeteer.launch({
+    args: ['--no-sandbox'],
+    ignoreHTTPSErrors: true,
   });
+  const page = await browser.newPage();
+  await page.waitFor(5000); /* webfont */
+  await page.setViewport({ width: 896, height: 504, deviceScaleFactor: 1 });
+  await page.goto(
+    'http://localhost:5000/template?slogan=' + todaysSlogan.slogan
+  );
+
+  const photoBuffer = await page.screenshot();
+
+  await browser.close();
 
   let text = '';
   if (todaysSlogan.via) text += 'via ' + todaysSlogan.via;
@@ -41,10 +60,12 @@ const client = new twitter({
       .then((tweet) => {
         // then tweet!
         console.info('done');
+        process.exit(1);
         return true;
       });
   } catch (error) {
     console.error(error);
+    process.exit(1);
     return;
   }
 })();
