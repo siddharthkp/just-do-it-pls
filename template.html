@@ -69,3 +69,8 @@
     <h1>{{slogan}}.</h1>
   </div>
 </div>
+
+<script>
+  const slogan = decodeURI(location.href.split('?slogan=')[1]);
+  document.querySelector('h1').innerText = slogan;
+</script>
