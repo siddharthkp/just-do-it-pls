@@ -2,18 +2,37 @@
   "1988-10-05": { "slogan": "just do it", "via": "@nike" },
   "2020-07-19": { "slogan": "just screw it" },
   "2020-07-20": { "slogan": "just threw it", "via": "@arpitbatra123" },
-  "2020-07-21": { "caption": "Ghost under your bed?", "slogan": "just boo it", "via": "@nashvail" },
+  "2020-07-21": {
+    "caption": "Ghost under your bed?",
+    "slogan": "just boo it",
+    "via": "@nashvail"
+  },
   "2020-07-22": { "slogan": "just blue it", "via": "@kilianvalkhof" },
-  "2020-07-23": { "caption": "Bars closed?", "slogan": "just brew it", "via": "@ManghwaniManish & @nashvail" },
-  "2020-07-24": { "caption": "shoe blows apart on live television?", "slogan": "just glue it", "via": "@acharya_saugat" },
-  "2020-07-25": { },
-  "2020-07-26": { },
-  "2020-07-27": { "caption": "Registrar: Domain for project you got excited about but never actually built is about to expire", "slogan": "just renew it", "via": "@vishwamehta30" },
+  "2020-07-23": {
+    "caption": "Bars closed?",
+    "slogan": "just brew it",
+    "via": "@ManghwaniManish & @nashvail"
+  },
+  "2020-07-24": {
+    "caption": "shoe blows apart on live television?",
+    "slogan": "just glue it",
+    "via": "@acharya_saugat"
+  },
+  "2020-07-25": {},
+  "2020-07-26": {},
+  "2020-07-27": {
+    "caption": "Registrar: Domain for project you got excited about but never actually built is about to expire",
+    "slogan": "just renew it",
+    "via": "@vishwamehta30"
+  },
   "2020-07-28": { "slogan": "just push it", "via": "@satyarohith_" },
   "2020-07-29": { "slogan": "just ship it", "via": "@_kamlesh_" },
   "2020-07-30": { "slogan": "just scroll it", "via": "@ManghwaniManish" },
   "2020-07-31": { "slogan": "just bake it", "via": "@_vramana" },
-  "2020-08-01": { "slogan": "just hodl it", "via": "@_vramana" },
+  "2020-08-01": {
+    "caption": "hey reply guy! \n hey you!",
+    "slogan": "just stop it"
+  },
   "2020-08-02": { "slogan": "just vue it", "via": "@backslash_r" },
   "2020-08-03": { "slogan": "just foo it", "via": "@backslash_r" },
   "2020-08-04": { "slogan": "just preview it", "via": "@jailany_m" },
@@ -22,5 +41,7 @@
   "2020-08-07": { "slogan": "just cue it", "via": "@vishwamehta30" },
   "2020-08-08": { "slogan": "just queue it", "via": "@vishwamehta30" },
   "2020-08-09": { "slogan": "just renew it", "via": "@vishwamehta30" },
-  "2020-08-10": { "caption": "Whitespace around text bothers you?", "slogan": "just capsize it", "via": "@kuldeepkeshwar" }
+  "2020-08-10": { "slogan": "just break it", "via": "@reeversedev" },
+  "2020-08-11": { "caption": "Whitespace around text bothers you?", "slogan": "just capsize it", "via": "@kuldeepkeshwar" }
+
 }
